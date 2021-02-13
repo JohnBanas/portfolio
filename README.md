@@ -8,7 +8,7 @@ Welcome to my portfolio website! You will find practical applications of various
 * CSS
 
 ## Website
-
+https://johnbanas.github.io/portfolio/
 
 ## Design
 Made with :heart: by John Patrick Banas
