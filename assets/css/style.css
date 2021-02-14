@@ -36,7 +36,7 @@ header h1 {
   text-shadow: 0 0 5px lightblue;
 }
 
-header a {
+a {
   text-decoration: none;
 }
 header nav {
@@ -106,7 +106,7 @@ header nav ul li a{
   flex-wrap: wrap;  
 }
 
-h2 {
+.hero h2 {
   padding-right: 2%;
   height: 80%;
   margin:1%;
@@ -142,9 +142,6 @@ body {
   background-image:linear-gradient(to bottom right,var(--primary-color),var(--tertiary-color));
   margin: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-size: cover;
-  background-position: 100%;
-  width: 100%;
 }
 
 .glow {
@@ -156,6 +153,47 @@ body {
 }
 
 /*Projects Section*/
+
+.projects {
+  background-image:linear-gradient(to bottom right,var(--primary-color),var(--secondary-color));
+  color: var(--border-accent-color);
+  background-size: cover;
+  background-position: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.projects h2 {
+  font-size: 48px;
+  color: var(--primary-color);
+  padding: 2%;
+  width: 100%;
+  text-align: center;
+  background-image:linear-gradient(to bottom right,var(--border-accent-color),var(--tertiary-color));
+  border-bottom: 1px solid black;
+}
+
+.projects h3 {
+  width: 20%;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+
+.project-iframe {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  height: 500px;
+  width: 80%;
+  padding: 1%;
+  
+}
+
 
 
 
