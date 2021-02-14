@@ -3,30 +3,71 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Portfolio</title>
+  <title>John Patrick Banas Portfolio</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-  <script src='main.js'></script>
+  <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/style.css'>
 </head>
 <body>
+  <!--Navbar-->
   <header>
-    <h1>Student Bio</h1>
-  </header>
-  <main class="container">
-    <section id="main-bio">
-      <h2>John Patrick Banas</h2>
-      <img id="bio-image" src="https://placehold.it/200x200" alt="Profile Picture">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam modi tempora recusandae, quos adipisci, corporis neque beatae sit aut quo tenetur eligendi odio molestiae consequatur placeat molestias et distinctio fugiat.</p>
-    </section>
-
-    <section id="contact-info">
-      <h2>Contact Info</h2>
+    <h1 id="profile-home">John Patrick Banas</h1>
+    <nav>
       <ul>
-        <li><strong>Email:</strong><a href="jbanas9124@gmail.com">jbanas9124@gmail.com</a></li>
-        <li><strong>GitHub:</strong><a href="#">GitHub</a></li>
-        <li><strong>Portfolio:</strong><a href="#">Coming Soon</a></li>
+        <li><a href="#profile-home">Home</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#work">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+    </nav>
+  </header>
+  <!--Hero-->
+  <main class="container">
+
+    <section id="main-bio" class="hero glow">
+      <h2 id="about-me">About Me</h2>
+      <img id="bio-image" tabindex="1" alt="An incredibly handsome photo of a bearded young man smiling with a tan ha on." src="./assets/images/profile-photo.jpeg" alt="Profile Picture">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quam explicabo, reiciendis illo soluta id officia maiores veritatis amet quos, voluptatibus omnis expedita accusantium optio dolorem cum. Assumenda, ad nobis.</p>
+    </section>
+    <!--Perhaps do this like a "coming attractions" at the movies-->
+    <section id="work" class="projects">
+      <h2>Projects</h2>
+      
+      <article class="run-buddy">
+        <h3>Run Buddy</h3>
+        <img src="" alt="">
+      </article>
+
+      <article class="horiseon">
+        <h3>Horiseon</h3>
+        <img src="" alt="">
+      </article>
+
+      <article class="">
+        <h3>Coming Soon</h3>
+      </article>
+
+    </section>
+  
+  
+    <!--Contact Info-->
+    <section id="contact-info" class="glow">
+      <h2 id="contact">Contact Info</h2>
+      <ul>
+        <li><strong>Phone:</strong><a href="tel:6153089631">615-308-9631</a></li>
+        <li><strong>Email:</strong><a href="mailto:jbanas9124@gmail.com">jbanas9124@gmail.com</a></li>
+        <li><strong>GitHub:</strong><a href="https://github.com/JohnBanas">https://github.com/JohnBanas</a></li>
+        <li><strong>Resume:</strong><a href="./assets/images/John_Banas_-_Software_Developer.pdf">Resume PDF</a></li>
+        <li><strong>Linked In:</strong><a href="https://www.linkedin.com/in/john-banas-2a9378203/">https://www.linkedin.com/in/john-banas-2a9378203/</a></li>
+        <li><strong>Facebook:</strong><a href="https://www.facebook.com/john.banas.549/">https://www.facebook.com/john.banas.549/</a></li>
+      </ul>
+      
     </section>
   </main>
+  <!--Footer, sitemap,--> 
+  <footer>
+    <h4>&copy;2002</h4>
+  </footer>  
+    
+  
 </body>
 </html>
