@@ -14,26 +14,16 @@ https://hookagency.com/website-color-schemes/*/
 }
 /*Header, Nav, Links*/
 header {
-  background-image:linear-gradient(to bottom right,var(--primary-color),var(--tertiary-color));
-  color: var(--border-accent-color);
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position:-webkit-sticky;
-  position: sticky;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 75%;
-  z-index: 9999;
 }
 
 header h1 {
   font-weight: bold;
   font-size: 36px;
-  background-image:linear-gradient(to bottom,right,var(--tertiary-color),var(--border-accent-color));
   margin: 0;
-  text-shadow: 0 0 5px lightblue;
 }
 
 a {
@@ -44,30 +34,40 @@ header nav {
 }
 
 header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 2px;
+  padding:0;
 }
 
 header nav ul li a{
-  color: var(--link-color);
+  color: black;
+  background-color: var(--primary-color);
   padding: 5px 15px;
+  margin: 0 5px;
   font-weight: lighter;
   font-size: 1.55vw;
-  text-shadow: 0 0 5px lightblue;
-  background-image:linear-gradient(to bottom,right,var(--tertiary-color),var(--border-accent-color));
+  border: 1px solid black;
+  border-radius: 5px;
   }
 
-   a, a:focus, a:hover {
-    color: var(--border-accent-color);
+  header nav ul li {
+    display: flex;
   }
 
-  a, a:visited{
-    color:var(--border-accent-color);
+  a:focus, a:hover, a:visited {
+    color: black;
   }
   /*End of Header & Links*/
+
+  /*Body*/
+
+  body {
+    background-image:linear-gradient(to bottom right,var(--primary-color),var(--tertiary-color));
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
 
   /*Footer*/
 
@@ -80,8 +80,8 @@ header nav ul li a{
     flex-wrap: wrap;
   }
 
-  footer h2 {
-    color: var(--tertiary-color);
+  footer h4 {
+    color: black;
     font-size: 30px;
     margin: 0;
   }
@@ -101,55 +101,54 @@ header nav ul li a{
   width: 100%;
   height: 400px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
+  align-content: center;
   flex-direction: row;
   flex-wrap: wrap;  
 }
 
-.hero h2 {
-  padding-right: 2%;
-  height: 80%;
-  margin:1%;
-  display: flex;
-  justify-content: flex-start;
-  align-self: center;
-  flex-wrap: wrap;
-  border-right: 3px solid lightblue; 
-}
-
-.hero img {
+#bio-image {
+  margin-left: 5%;
   height: 80%;
   border: 2px solid black;
   border-radius: 5px;
-  margin:1%;
   display: flex;
-  justify-content: flex-start;
-  align-self: center;
+}
+
+/*About Me*/
+
+.glow {
+  border-bottom: 1px solid black;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
-.hero p {
-  color: white;
+.glow h2 {
+  text-align: center;
+  font-size: 32px;
+  color: black;
+  padding: 10% 0 0 0;
+  width:20%;
+  margin: auto;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  border-right: 3px solid black;
+}
+
+.glow p {
+  color: black;
   margin-left: 1%;
   width: 60%;
+  font-size: 1.55vw;
   display: flex;
   justify-content: center;
   align-self: center;
   flex-wrap: wrap;
-}
-
-body {
-  background-image:linear-gradient(to bottom right,var(--primary-color),var(--tertiary-color));
-  margin: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.glow {
-  color: var(--border-accent-color);
-  padding: 5px 15px;
-  font-weight: lighter;
-  font-size: 1.55vw;
-  text-shadow: 0 0 5px lightblue;
 }
 
 /*Projects Section*/
@@ -167,7 +166,7 @@ body {
 
 .projects h2 {
   font-size: 48px;
-  color: var(--primary-color);
+  color: black;
   padding: 2%;
   width: 100%;
   text-align: center;
@@ -176,12 +175,17 @@ body {
 }
 
 .projects h3 {
-  width: 20%;
+  color: black;
+  width: 18%;
   font-size: 32px;
   display: flex;
   justify-content: center;
   align-self: center;
   flex-wrap: wrap;
+}
+
+.projects h3 a, a:focus, a:hover, a:visited {
+  color: black;
 }
 
 .project-iframe {
@@ -190,39 +194,63 @@ body {
   align-content: center;
   height: 500px;
   width: 80%;
-  padding: 1%;
-  
+  margin: 1%;
+  border: 1px solid black;
 }
 
 
-
-
 /*Contact Info*/
+
 #contact-info {
-  background-image:linear-gradient(to bottom right,var(--primary-color),var(--tertiary-color));
-  color: var(--border-accent-color);
-  padding: 20px 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  background-image:linear-gradient(to bottom right,var(--primary-color),var(--secondary-color));
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   background-size: cover;
-  background-position: 75%;
- }
+  background-position: 100%;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  } 
+
+#contact {
+  font-size: 48px;
+  color: black;
+  width: 100%;
+  text-decoration: underline;
+  display: flex;
+  align-self: center;
+  }
 
  #contact-info ul {
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
-  justify-content: flex-start;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
  }
 
- #contact-info ul li a {
-  color: var(--link-color);
+ #contact-info ul li strong, #contact-info ul li a {
+  width: 80%;
+  color: black;
   padding: 5px 15px;
-  font-weight: lighter;
+  margin: 0 5px;
   font-size: 1.55vw;
+  display: flex;
+  justify-content: flex-start;
   text-shadow: 0 0 5px lightblue;
-  background-image:linear-gradient(to bottom,right,var(--tertiary-color),var(--border-accent-color));
+}
+
+ .contact-list1 {
+  width: 35%;
+  display: flex;
+ }
+
+ .contact-list2 {
+   width: 45%;
+   display: flex;
  }
 
 
