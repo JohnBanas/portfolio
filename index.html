@@ -8,26 +8,29 @@
   <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/style.css'>
 </head>
 <body>
-  <!--Navbar & Hero-->
-  <header class="flex-parent hero border">
-    <h1 class="child">John Patrick Banas</h1>
-    <img id="bio-image" tabindex="1" alt="An incredibly handsome photo of a bearded young man smiling with a tan ha on." src="./assets/images/profile-photo.jpeg">
-      <nav>
-      <ul class="flex-parent">
+  <!--Navbar-->
+  <header class="border">
+    <h1>John Patrick Banas</h1>
+    <nav>
+      <ul>
         <li><a href="#profile-home">Home</a></li>
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#work">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    </nav>    
   </header>
    
-
   <main>
+    <!--Hero-->
+    <section class="hero border">
+      <img tabindex="1" alt="An incredibly handsome photo of a bearded young man smiling with a tan ha on." src="./assets/images/profile-photo.jpeg">
+      <h2>Welcome to my page!</h2>
+    </section>
+
     <!--About Me-->
-    <section class="flex-parent-divide border">
-      <h2 id="about-me" class="child2">About Me</h2>
-      <p class="child2"><strong>Welcome to my page!</strong><br/>I live and work in Nashville,TN with my wife Samantha and our puppy Teddy. 
+    <section id="about-me" class="border">
+      <p><strong>About Me</strong><br/><br/>I live and work in Nashville,TN with my wife Samantha and our puppy Teddy. 
         I enjoy travelling both locally and globally, so be sure visit my 
         Facebook or Instagram for pictures of some of my adventures! I believe 
         strongly in helping others and being of service. Technology is in the unique position to give a lot of resources
@@ -41,20 +44,32 @@
     </section>
 
     <!--Projects-->
-    <section class="grid">
-      <h2 id="work">Projects</h2>
-      <a class="run-buddy" href="https://johnbanas.github.io/run-buddy/" target="_blank"><h3>Run Buddy</h3></a>
-      <a class="horiseon" href="https://johnbanas.github.io/horiseon-landing-page/" target="_blank"><h3>Horiseon</h3></a>
-      <a class="coming-soon" href="#" target="_blank"><h3>Coming Soon</h3></a>
-    </section>   
+    <section class="grid border">
+      <h2 id="work" class="grid-title">Projects</h2>
+        <a class="run-buddy" href="https://johnbanas.github.io/run-buddy/" target="_blank"><h3>Run Buddy</h3></a>
+        <a class="horiseon" href="https://johnbanas.github.io/horiseon-landing-page/" target="_blank"><h3>Horiseon</h3></a>
+        <a class="coming-soon" href="#" target="_blank"><h3>Coming Soon</h3></a>
+    </section> 
     
-
+    <!--Contact Me-->
+    <section id="contact" class="contact-grid border">
+      <h2 class="contact-title">Contact</h2>
+        <p class="contact1"><a href="mailto:banasjohn324@gmail.com" target="_blank"><img src="./assets/images/gmail.png" alt="Google mail envelope with M on it icon"></a></p>
+        <p class="contact2"><a href=""target="_blank"><img src="./assets/images/boy.png" alt="outline of a boy talking on the phone"></a></p>
+        <p class="contact3"><a href=""target="_blank"><img src="./assets/images/github.png" alt="the git hub icon of an outline of a sitting cat"></a></p>
+        <p class="contact4"><a href=""target="_blank"><img src="./assets/images/linkedin.png" alt="LinkedIn logo icon"></a></p>
+      </ul>
+    </section>
   </main>
 
+
+
   <!--Footer-->
-  <footer class="flex-parent">
-    <h4 class="child">&copy;2002</h4>
-    <p class="child">Thank you so much for coming by!</p>
+  <footer class="grid-footer border">
+    <p class="footer-item1">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+    <p class="footer-item2"><a href="https://www.facebook.com/john.banas.549/" target="_blank"><img src="./assets/images/facebook.png" alt="The Facebook like icon"></a></p>
+    <p class="footer-item3"><a href="https://www.instagram.com/jpbanas/" target="_blank"><img src="./assets/images/instagram.png" alt="The Instagram camera icon"></a></p>
+    <h4 class="footer-item4">&copy;2002</h4>
   </footer>
 
 </body>
