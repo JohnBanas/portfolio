@@ -10,6 +10,10 @@ Welcome to my portfolio website! You will find practical applications of various
 ## Website
 https://johnbanas.github.io/portfolio/
 
+### Web Page Image
+!John Patrick Banas' Portfolio landing page static](./assets/images/.png)
+
+
 ## Design
 Made with :heart: by John Patrick Banas
 
