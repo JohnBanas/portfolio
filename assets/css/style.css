@@ -646,6 +646,14 @@ a:focus, a:hover, a:visited {
   border-bottom: 1px solid black;
 }
 
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 * {
   box-sizing: border-box;
 }
