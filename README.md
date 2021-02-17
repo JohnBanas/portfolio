@@ -11,7 +11,7 @@ Welcome to my portfolio website! You will find practical applications of various
 https://johnbanas.github.io/portfolio/
 
 ### Web Page Image
-!John Patrick Banas' Portfolio landing page static](./assets/images/John-Patrick-Banas-Portfolio.png)
+![John Patrick Banas' Portfolio landing page static](./assets/images/John-Patrick-Banas-Portfolio.png)
 
 
 ## Design
