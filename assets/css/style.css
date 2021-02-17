@@ -102,7 +102,7 @@ header nav ul li a:hover {
 }
 
 footer {
-  background-image: url(./images/profile-background.JPG);
+  background-image: url(../assets/images/profile-background.JPG);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -114,7 +114,7 @@ footer {
 /*Hero*/
 
 .hero {
-  background-image: url(./images/profile-background.JPG);
+  background-image: url(../assets/images/profile-background.JPG);
   background-size: cover;
   display: flex;
   justify-content: space-around;
