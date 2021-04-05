@@ -1,115 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>John Patrick Banas Portfolio</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;700&display=swap" rel="stylesheet">
   <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/style.css'>
+  <script src="https://kit.fontawesome.com/f150a97242.js" crossorigin="anonymous"></script>
+  <link href="./assets/font_awesome/font_awesome_css/all.css" rel="stylesheet" />
 </head>
+
 <body>
   <!--Navbar-->
-  <header class="border">
-    <h1>John Patrick Banas</h1>
-    <nav>
-      <ul>
-        <li><a href="#profile-home">Home</a></li>
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#work">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>    
+  <header class="container text-center">
+    <h1>
+      John Patrick Banas</h1>
+    <p class="currentTime"></p>
   </header>
-   
-  <main>
-    <!--Hero-->
-    <section class="hero border">
-      <img tabindex="1" alt="An incredibly handsome photo of a bearded young man smiling with a tan ha on." src="./assets/images/profile-photo.jpeg">
-      <h2>Welcome to my page!</h2>
-    </section>
 
+  <main>
     <!--About Me-->
-    <section id="about-me" class="border">
-      <p><strong>About Me</strong><br/><br/>I live and work in Nashville,TN with my wife Samantha and our puppy Teddy. 
-        I enjoy travelling both locally and globally, so be sure visit my 
-        Facebook or Instagram for pictures of some of my adventures! I believe 
-        strongly in helping others and being of service. Technology is in the unique position to give a lot of resources
-        efficiently to the world. I want to be part of that solution.<br/><br/>
-        I began a coding journey over a year ago while helping my nephew with his computer science homework.
-        I have twenty years of management experience in the service industry, so I excel in customer service and problem solving.
-        I thouroughly enjoy the creative yet technical aspects of software development.  I love to work with a team, but can be self-managed 
-        when necessary. I am a self-motivated learner who can adapt to new concepts quickly. I have front and back end software engineering
-        skills that I am happy to put to work for you! You will find examples below in the "Projects" section. Feel free to reach out with any questions, or just to chat!
-      </p>
+    <section id="about-me" class="container text-center">
+      <!-- Button trigger modal -->
+      <button id="aboutMeBtn" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#firstModal">
+        About Me
+      </button>
+      <!-- Modal -->
+      <article class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="firstModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="firstModalLabel">Do you like your personnel with personality?</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <p class="modal-body">
+              I live and work in Nashville,TN with my wife Samantha and our puppy Teddy.
+              I enjoy travelling both locally and globally, so be sure visit my
+              Facebook or Instagram for pictures of some of my adventures! I believe
+              strongly in helping others and being of service. Technology is in the unique position to give a lot of
+              resources
+              efficiently to the world. I want to be part of that solution.<br /><br />
+              I began this coding journey while helping my nephew with his computer science homework. It was an intense
+              fascination, that continues to this day.
+              I also have twenty years of management experience in the service industry, so I excel in customer service
+              and problem
+              solving.
+              I thouroughly enjoy all the different creative ways to express yourself through code. The challenge in the
+              technical aspects of software development, are engaging and fufilling. I love to work with a team, but
+              can be self-managed
+              when necessary. I am a self-motivated learner who can adapt to new concepts quickly. I have front and back
+              end
+              software engineering
+              skills that I am happy to put to work for you! You will find examples below in the "Projects" section.
+              Feel free
+              to reach out with any questions, or just to chat!
+            </p>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
 
     <!--Projects-->
-    <section class="grid border">
-      <h2 id="work" class="grid-title">Projects</h2>
-        <a class="run-buddy" href="https://johnbanas.github.io/run-buddy/" target="_blank">
-          <h3>Run Buddy</h3>
-          <span class="screen-reader-only">Opens a new window</span>
-        </a>
-        <a class="horiseon" href="https://johnbanas.github.io/horiseon-landing-page/" target="_blank">
-          <h3>Horiseon</h3>
-          <span class="screen-reader-only">Opens a new window</span>
-        </a>
-        <a class="coming-soon" href="#" target="_blank">
-          <span class="screen-reader-only">Opens a new window</span>
-          <h3>Coming Soon</h3>
-        </a>
-    </section> 
-    
+    <section class="container text-center">
+      <!-- Button trigger modal -->
+      <button id="previousWorkBtn" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ModalCarousel">
+        Previous Work
+      </button>
+      <article class="modal fade" id="ModalCarousel" tabindex="-1" role="dialog" aria-labelledby="ModalCarouselLabel">
+
+        <div class="modal-dialog" role="document">
+
+          <div class="modal-content">
+            <div id="carousel-modal-demo" class="carousel slide" data-ride="carousel">
+
+              <!-- Sliding images starting here -->
+
+              <div class="carousel-inner">
+
+                <div class="item">
+
+                  <h2>Previous Work</h2>
+                  <a class="run-buddy" href="https://johnbanas.github.io/run-buddy/" target="_blank">
+                    <h3>Run Buddy</h3>
+                  </a>
+
+                </div>
+
+                <div class="item">
+
+                  <a href="https://johnbanas.github.io/horiseon-landing-page/" target="_blank">
+                    <h3>Horiseon</h3>
+                  </a>
+
+                </div>
+
+                <div class="item">
+
+                  <a class="Motivation Manager" href="https://johnbanas.github.io/motivation-manager/" target="_blank">
+                    <h3>Motivation Manager</h3>
+                  </a>
+
+                </div>
+
+                <a class="left carousel-control" href="#carousel-modal-demo" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-modal-demo" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
     <!--Contact Me-->
-    <section id="contact" class="contact-grid border">
-      <h2 class="contact-title">Contact</h2>
-        <p class="contact1">
-          <a href="mailto:banasjohn324@gmail.com" target="_blank">
-            <img src="./assets/images/gmail.png" alt="Google mail envelope with M on it icon">
-            <span class="screen-reader-only">Opens a new window</span>
-          </a>
-        </p>
-        <p class="contact2">
-          <a href="tel:16153089631"target="_blank">
-            <img src="./assets/images/boy.png" alt="outline of a boy talking on the phone">
-            <span class="screen-reader-only">Opens a new window</span>
-          </a>
-        </p>
-        <p class="contact3">
-          <a href="https://github.com/JohnBanas"target="_blank">
-            <img src="./assets/images/github.png" alt="the git hub icon of an outline of a sitting cat">
-            <span class="screen-reader-only">Opens a new window</span>
-          </a>
-        </p>
-        <p class="contact4">
-          <a href="https://www.linkedin.com/in/john-banas-2a9378203/"target="_blank">
-            <img src="./assets/images/linkedin.png" alt="LinkedIn logo icon">
-            <span class="screen-reader-only">Opens a new window</span>
-          </a>
-        </p>
-      </ul>
+    <section id="contact" class="container text-center">
+      <!-- Button trigger modal -->
+      <button id="contactBtn" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#secondModal">
+        Contact
+      </button>
+      <!-- Modal -->
+      <article class="modal fade" id="secondModal" tabindex="-1" role="dialog" aria-labelledby="secondModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="secondModalLabel">How would you like to communicate?</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              </div>
+              <p class="modal-body">
+              
+                <a href="mailto:banasjohn324@gmail.com" target="_blank">
+                  <h4>Email</h4>
+                  <i class="fal fa-mailbox fa-3x"></i>
+                </a>
+              
+              
+                <a href="tel:16153089631" target="_blank">
+                  <h4>Call/Text</h4>
+                  <i class="fad fa-mobile fa-3x"></i>
+                </a>
+              
+              
+                <a href="https://github.com/JohnBanas" target="_blank">
+                  <h4>GitHub</h4>
+                  <i class="fab fa-github-alt fa-3x"></i>
+                </a>
+              
+              
+                <a href="https://www.linkedin.com/in/john-banas-2a9378203/" target="_blank">
+                  <h4>LinkedIn</h4>
+                  <i class="far fa-info fa-3x"></i>
+                </a>
+              
+              
+                <a href="https://www.facebook.com/john.banas.549/" target="_blank">
+                  <h4>Facebook</h4>
+                  <i class="fab fa-facebook fa-3x"></i>
+                </a>
+              
+              
+                <a href="https://www.instagram.com/jpbanas/" target="_blank">
+                  <h4>Instagram</h4>
+                  <i class="fab fa-instagram-square fa-3x"></i>
+                </a>
+              
+              </p>
+              
+            
+
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
 
   <!--Footer-->
-  <footer class="grid-footer border">
-    <p class="footer-item1">Icons made by 
-      <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
-      from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-    </p>
-    <p class="footer-item2">
-      <a href="https://www.facebook.com/john.banas.549/" target="_blank">
-        <img src="./assets/images/facebook.png" alt="The Facebook like icon">
-        <span class="screen-reader-only">Opens a new window</span>
-      </a>
-    </p>
-    <p class="footer-item3">
-      <a href="https://www.instagram.com/jpbanas/" target="_blank">
-        <img src="./assets/images/instagram.png" alt="The Instagram camera icon">
-        <span class="screen-reader-only">Opens a new window</span>
-      </a>
-    </p>
-    <h4 class="footer-item4">&copy;2002</h4>
+  <footer class="container text-center">
+    <h4 class="footer-item4">&copy;2021</h4>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
